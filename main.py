@@ -13,18 +13,18 @@ import json
 app = FastAPI()
 
 async def load_model_async():
-    return load_model('./training.h5')  # Update with the correct path
+    return load_model('./training.h5')  
 
 async def load_tokenizer_async():
-    with open('./tokenizer.pickle', 'rb') as handle:  # Update with the correct path
+    with open('./tokenizer.pickle', 'rb') as handle:  
         return pickle.load(handle)
 
 async def load_num_index_async():
-    with open('./num.pickle', 'rb') as handle:  # Update with the correct path
+    with open('./num.pickle', 'rb') as handle:  
         return pickle.load(handle)
 
 async def load_dataset_async():
-    with open('./dataset.json', 'r') as outputfile:  # Update with the correct path
+    with open('./dataset.json', 'r') as outputfile:  
         return json.load(outputfile)
 
 async def get_chatbot_response(user_input):
