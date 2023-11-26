@@ -22,9 +22,13 @@
 #     with open('./num.pickle', 'rb') as handle:  
 #         return pickle.load(handle)
 
-# async def load_dataset_async():
-#     with open('./dataset.json', 'r') as outputfile:  
-#         return json.load(outputfile)
+async def load_dataset_async():
+    with open('./dataset.json', 'r') as outputfile:  
+        return json.load(outputfile)
+
+async def save_dataset_async(dic):
+    with open('./dataset.json', 'w') as outputfile:  
+        json.dump(dic,outputfile)
 
 # async def get_chatbot_response(user_input):
 #     print(user_input)
@@ -75,6 +79,7 @@
 from fastapi import FastAPI
 import time
 from pydantic import BaseModel
+import json
 
 app=FastAPI()
 
@@ -84,6 +89,35 @@ class timeRequest(BaseModel):
 @app.post('/')
 def rootPage():
     return('Welcome to my first First API project')
+
+class loginCred(BaseModel):
+    user:str
+    password:str
+
+@app.post('/login')
+async def loginPage(info:loginCred):
+    file= await load_dataset_async()
+    check=False
+    for i in file['login']:
+        if(i['user']==info.user and i['password']==info.password):
+            check=True
+            break
+    return {"response":check}
+
+
+@app.post('/signin')
+async def loginPage(info:loginCred):
+    file= await load_dataset_async()
+    check=False
+    for i in file['login']:
+        if(i['user']==info.user and i['password']==info.password):
+            check=True
+            break
+    if check==False:
+        file['login'].append({"user":info.user,"password":info.password})
+        await save_dataset_async(file)
+        return {"response":"sucessfully saved"}
+    return {"response":"not saved"}
 
 @app.post('/time')
 async def timePage(req:timeRequest):
