@@ -51,5 +51,8 @@ class scoringItem(BaseModel):
 @app.post('/')
 async def scoring_endpoint(item:scoringItem):
     prompt=item.prompt
+    curr_time=time.strftime("%H:%M:%S" ,time.localtime())
     reply= get_chatbot_response(prompt)
-    return {"reply":reply}
+    return {"question":prompt,
+            "reply":reply,
+            "time": curr_time}
