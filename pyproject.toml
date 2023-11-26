@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "newpoetryproject"
+version = "0.1.0"
+description = ""
+authors = ["colddsam <dassamratkumar772@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^2.1.3"
+keras = "^2.15.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

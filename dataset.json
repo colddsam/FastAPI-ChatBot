@@ -1,0 +1,104 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hi", "Hello", "Hey", "Greetings"],
+      "responses": ["Hello! How can I help you?", "Hi there!", "Greetings! What can I do for you today?"]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Goodbye", "Bye", "See you later", "Farewell"],
+      "responses": ["Goodbye! Have a great day.", "Bye! Come back soon.", "Farewell!"]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "Appreciate it", "Thanks a lot"],
+      "responses": ["You're welcome!", "Glad I could help.", "No problem!"]
+    },
+    {
+      "tag": "name",
+      "patterns": ["What's your name?", "Do you have a name?", "Who are you?"],
+      "responses": ["I'm a chatbot. You can call me ChatGPT.", "I don't have a personal name. You can just call me Chatbot."]
+    },
+    {
+      "tag": "age",
+      "patterns": ["How old are you?", "What's your age?", "When were you created?"],
+      "responses": ["I don't have an age. I'm a program created by OpenAI.", "I don't experience time like humans do."]
+    },
+    {
+      "tag": "weather",
+      "patterns": ["What's the weather like today?", "Tell me about the weather", "Is it going to rain?"],
+      "responses": ["I'm sorry, I don't have real-time weather information. You can check a weather website or app."]
+    },
+    {
+      "tag": "joke",
+      "patterns": ["Tell me a joke", "Give me a joke", "Joke time"],
+      "responses": ["Why don't scientists trust atoms? Because they make up everything!", "Did you hear about the mathematician who's afraid of negative numbers? He'll stop at nothing to avoid them."]
+    },
+    {
+      "tag": "help",
+      "patterns": ["Help me", "I need assistance", "Can you help?"],
+      "responses": ["Of course! What do you need help with?", "I'm here to help. Please let me know what you're looking for."]
+    },
+    {
+      "tag": "music",
+      "patterns": ["Recommend some music", "What's your favorite song?", "Play some music"],
+      "responses": ["I don't have personal preferences, but I can recommend some popular songs. What genre are you in the mood for?"]
+    },
+    {
+      "tag": "news",
+      "patterns": ["Tell me the latest news", "What's happening in the world?", "Any news updates?"],
+      "responses": ["I don't have real-time news updates. You can check a news website for the latest information."]
+    },
+    {
+      "tag": "movies",
+      "patterns": ["Recommend a movie", "What's a good movie to watch?", "Tell me about a movie"],
+      "responses": ["Sure! What genre are you interested in? I can recommend a movie based on your preference."]
+    },
+    {
+      "tag": "technology",
+      "patterns": ["Tell me about technology", "What's the latest in tech?", "Any tech news?"],
+      "responses": ["Technology is constantly evolving. Is there a specific topic in technology you'd like to know more about?"]
+    },
+    {
+      "tag": "sports",
+      "patterns": ["Tell me about sports", "What's happening in the sports world?", "Any sports news?"],
+      "responses": ["I'm not updated in real-time, but I can share general information about sports. What sport are you interested in?"]
+    },
+    {
+      "tag": "compliment",
+      "patterns": ["You're great", "You're awesome", "Good job"],
+      "responses": ["Thank you! I'm here to assist you.", "I appreciate the compliment! How can I help you further?"]
+    },
+    {
+      "tag": "insult",
+      "patterns": ["You're terrible", "You're bad", "I don't like you"],
+      "responses": ["I'm sorry if I've disappointed you. I'll do my best to improve.", "I'm here to assist. If there's anything specific you didn't like, please let me know."]
+    },
+    {
+      "tag": "random",
+      "patterns": ["Tell me something random", "Give me a random fact", "Surprise me"],
+      "responses": ["Did you know that honey never spoils? Archaeologists have found pots of honey in ancient Egyptian tombs that are over 3,000 years old and still perfectly edible!"]
+    },
+    {
+      "tag": "emotion",
+      "patterns": ["How are you feeling?", "Are you happy?", "Do you have emotions?"],
+      "responses": ["I don't have feelings or emotions. I'm here to provide information and assistance."]
+    },
+    {
+      "tag": "programming",
+      "patterns": ["Tell me about programming", "What programming languages do you know?", "Any coding tips?"],
+      "responses": ["I can provide information about various programming languages. Is there a specific language or topic you're interested in?"]
+    },
+    {
+      "tag": "science",
+      "patterns": ["Tell me about science", "What's your favorite scientific fact?", "Any interesting science trivia?"],
+      "responses": ["I love science! Did you know that a group of flamingos is called a 'flamboyance'?"]
+    },
+    {
+      "tag": "food",
+      "patterns": ["Recommend a restaurant", "What's your favorite food?", "Tell me about a delicious dish"],
+      "responses": ["I don't have personal preferences, but I can recommend popular restaurants or dishes. What type of cuisine are you in the mood for?"]
+    }
+  ]
+}
