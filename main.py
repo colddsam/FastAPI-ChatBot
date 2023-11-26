@@ -1,7 +1,6 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 import time
-import asyncio
 
 from keras.models import load_model
 import pickle
